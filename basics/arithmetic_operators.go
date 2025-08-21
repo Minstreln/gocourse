@@ -35,7 +35,7 @@ func main() {
 	maxInt = maxInt + 1 // this will overflow
 	fmt.Println(maxInt)
 
-	// overflo example with unsigned integer
+	// overflow example with unsigned integer
 	var uMaxInt uint64 = 18446744073709551615 // max value for uint64
 	fmt.Println("Max Uint64:", uMaxInt)
 
