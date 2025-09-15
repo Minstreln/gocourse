@@ -30,7 +30,7 @@ func main() {
 
 	// overflow example with signed integer
 	var maxInt int64 = 9223372036854775807 // Max value for int64
-	fmt.Println("Max Int64:", maxInt)  
+	fmt.Println("Max Int64:", maxInt)
 
 	maxInt = maxInt + 1 // this will overflow
 	fmt.Println(maxInt)
@@ -40,16 +40,13 @@ func main() {
 	fmt.Println("Max Uint64:", uMaxInt)
 
 	uMaxInt = uMaxInt + 1 // this will overflow
-	fmt.Println(uMaxInt) // will print 0 due to overflow
+	fmt.Println(uMaxInt)  // will print 0 due to overflow
 
 	// example of underflow
 	var smallFloat float64 = 1.0e-323 // Min value for float64
 	fmt.Println(smallFloat)
-	
+
 	smallFloat = smallFloat / math.MaxFloat64
 	fmt.Println(smallFloat)
 
 }
-
-
-
